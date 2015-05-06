@@ -1,8 +1,9 @@
-# TITLE
+# Name
 
 Uni63
 
-# SYNOPSIS
+
+# Synopsis
 
 ```
     use Uni63;
@@ -12,7 +13,7 @@ Uni63
 ```
 
 
-# DESCRIPTION
+# Description
 
 A Unicode encoding scheme suitable for name mangling.
 
@@ -25,14 +26,23 @@ the codepoint is encoded in base-62 with digits `0..9`, `a..z`, `A..Z`.
 
 The decoder does not validate its input:
 
-  * an underscore that is not followed by a valid escape sequence will be
-    passed through, ie re-encoding a decoded string may not round trip
+  * An underscore that is not followed by a valid escape sequence will be
+    passed through, ie re-encoding a decoded string may not round trip.
 
-  * the numeric value of any escape sequence that follows the given scheme
+  * The numeric value of any escape sequence that follows the given scheme
     will be passed on to `chr`, even if the value lies outside the range of
-    Unicode codepoints
+    Unicode codepoints.
 
 
-# LICENSE
+# Bugs and Development
 
-Boost Software License, Version 1.0
+Development happens at [GitHub](https://github.com/cygx/p6-uni63). If you
+found a bug or have a feature request, use the issue tracker over there.
+
+
+# Copyright and License
+
+Copyright (C) 2015 by <cygx@cpan.org>
+
+Distributed under the
+[Boost Software License, Version 1.0](http://www.boost.org/LICENSE_1_0.txt)
