@@ -26,8 +26,9 @@ the codepoint is encoded in base-62 with digits `0..9`, `a..z`, `A..Z`.
 
 The decoder does not validate its input:
 
-  * An underscore that is not followed by a valid escape sequence will be
-    passed through, ie re-encoding a decoded string may not round trip.
+  * An invalid character or an underscore that is not followed by a valid
+    escape sequence will be passed through, thus re-encoding a decoded string
+    may not round trip.
 
   * The numeric value of any escape sequence that follows the given scheme
     will be passed on to `chr`, even if the value lies outside the range of
