@@ -1,6 +1,6 @@
 {
     "name" : "Uni63",
-    "version" : "*",
+    "version" : "0.1",
     "description" : "A Unicode encoding scheme suitable for name mangling.",
     "author" : "cygx <cygx@cpan.org>",
     "provides" : { "Uni63" : "Uni63.pm6" },
