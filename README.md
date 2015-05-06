@@ -1,7 +1,6 @@
 # Name
 
-Uni63
-
+Uni63 - A Unicode encoding scheme suitable for name mangling
 
 # Synopsis
 
@@ -12,10 +11,7 @@ Uni63
     my $dec = Uni63::dec($enc);
 ```
 
-
 # Description
-
-A Unicode encoding scheme suitable for name mangling.
 
 The 62 alphanumeric ASCII characters encode themselves. A 63th character `_` is
 used to mark escape sequences.
@@ -38,7 +34,8 @@ The decoder does not validate its input:
 # Bugs and Development
 
 Development happens at [GitHub](https://github.com/cygx/p6-uni63). If you
-found a bug or have a feature request, use the issue tracker over there.
+found a bug or have a feature request, use the
+[issue tracker](https://github.com/cygx/p6-uni63/issues) over there.
 
 
 # Copyright and License
