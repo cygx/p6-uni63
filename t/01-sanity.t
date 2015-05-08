@@ -5,7 +5,7 @@ use v6;
 use Test;
 use Uni63;
 
-plan 4;
+plan 5;
 
 my \IN1 = 'Leberkäse';
 
@@ -25,3 +25,5 @@ my \IN2 = q:to/__END__/;
     __END__
 
 is Uni63::dec(Uni63::enc(IN2)), IN2, 'round trip Shakespeare';
+is Uni63::dec(Uni63::dec(Uni63::enc(Uni63::enc(IN2)))), IN2,
+    'iterated round trip';
