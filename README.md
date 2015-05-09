@@ -13,7 +13,7 @@ Uni63 - A Unicode encoding scheme suitable for name mangling
 
 # Description
 
-The 62 alphanumeric ASCII characters encode themselves. A 63th character `_` is
+The 62 alphanumeric ASCII characters encode themselves. A 63rd character `_` is
 used to mark escape sequences.
 
 The escape character is followed by a single digit, indicating the number of
