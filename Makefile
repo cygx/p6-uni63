@@ -7,4 +7,4 @@ test:
 	$(PROVE) -e '$(PERL6)' t
 
 t-%: t/%-*.t
-	$<
+	$(PERL6) $<
