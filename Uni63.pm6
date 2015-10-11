@@ -3,7 +3,7 @@
 
 unit module Uni63;
 
-my constant ENC = @('0'..'9', 'a'..'z', 'A'..'Z');
+my constant ENC = @(flat '0'..'9', 'a'..'z', 'A'..'Z');
 my constant DEC = %(ENC.pairs.invert);
 
 our sub enc($_) {
