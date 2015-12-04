@@ -29,7 +29,7 @@ sub dec1($_) {
 
 our sub enc {
     .ACCEPTS($^s).made given BEGIN /
-        ^[ (<[ 0..9 a..z A..Z ]>+ { make ~$/ })
+        ^[ (<[0..9 a..z A..Z]>+ { make ~$/ })
         || (. { make enc1 ~$/ })
         ]*$
         { make $0>>.made.join }
@@ -38,7 +38,7 @@ our sub enc {
 
 our sub dec {
     .ACCEPTS($^s).made given BEGIN /
-        ^[ ((_ (<[0..9]>) <[0..9a..zA..Z]> ** { +$0 }) { make dec1 ~$0 })
+        ^[ ((_ (<[0..9]>) <[0..9 a..z A..Z]> ** { +$0 }) { make dec1 ~$0 })
         || (. <-[_]>* { make ~$/ })
         ]*$
         { make $0>>.made.join }
